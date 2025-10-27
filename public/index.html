@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Buscador Federado Europeana + PLOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador Federado</h1>
+        <p>Busca en Europeana y PLOS simultáneamente, con expansión de consulta usando DataMuse.</p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Ej: 'art history', 'climate change research'">
+            <button id="searchButton">Buscar</button>
+        </div>
+
+        <div id="loading" class="hidden">Cargando resultados...</div>
+        <div id="errorMessage" class="error-message hidden"></div>
+
+        <div id="resultsContainer">
+            <h2>Resultados de la búsqueda</h2>
+            <table id="resultsTable" class="hidden">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Fuente</th>
+                        <th>Relevancia Original</th>
+                        <th>Relevancia Normalizada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los resultados se insertarán aquí por JavaScript -->
+                </tbody>
+            </table>
+            <p id="noResultsMessage" class="hidden">No se encontraron resultados para tu búsqueda.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
